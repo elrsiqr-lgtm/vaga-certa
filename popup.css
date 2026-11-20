@@ -1,0 +1,24 @@
+body{width:380px}
+header{display:flex;align-items:center;justify-content:space-between;padding:14px 16px 4px}
+.brand{display:flex;align-items:center;gap:8px;font-size:16px}
+.icon{background:none;border:0;color:var(--base);padding:4px;border-radius:8px}.icon:hover{background:#0001}
+main{padding:8px 16px 16px;display:flex;flex-direction:column;gap:12px}
+.main{width:100%;font-size:15px}
+.hint{margin:0}.small{font-size:12px;margin:0}
+.status{border-radius:12px;padding:12px 14px;background:#fff;border:1px solid var(--line)}
+.status.error{border-color:var(--atencao);background:#FEF2F2;color:#991B1B}
+.status .btn{margin-top:8px;padding:8px 12px}
+h2{font-size:14px;margin:0}
+.row{display:flex;justify-content:space-between;align-items:center}
+.check{background:var(--equilibrio);color:#fff;border-radius:50%;width:22px;height:22px;display:grid;place-items:center;font-size:13px}
+.big{font-size:20px;font-weight:800;margin:8px 0 4px;word-break:break-word}
+details{border-top:1px solid var(--line);margin-top:8px;padding-top:8px}
+summary{cursor:pointer;font-weight:600}
+details p{margin:8px 0 0;color:var(--base);white-space:pre-wrap}
+#result{display:flex;flex-direction:column;gap:12px}
+#result[hidden]{display:none}
+.money{font-size:24px;font-weight:800;margin:8px 0 2px}
+.money.none{font-size:16px;color:var(--base);font-weight:700}
+#salaryNote{margin:0 0 10px}
+.spin{display:inline-block;width:14px;height:14px;border:2px solid #fff6;border-top-color:#fff;border-radius:50%;animation:s .8s linear infinite}
+@keyframes s{to{transform:rotate(360deg)}}

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Vaga Certa</title>
+<link rel="stylesheet" href="shared.css"><link rel="stylesheet" href="popup.css"></head>
+<body>
+<header>
+  <div class="brand"><img src="icons/icon32.png" alt="" width="28" height="28"><strong>Vaga Certa</strong></div>
+  <button id="gear" class="icon" title="Configurações" aria-label="Configurações">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg>
+  </button>
+</header>
+<main>
+  <button id="analisar" class="btn main">✦ Analisar vaga</button>
+  <p id="hint" class="muted hint">Em segundos, descubra o melhor currículo e a melhor estratégia.</p>
+  <div id="status" class="status" hidden></div>
+  <section id="result" hidden>
+    <div class="card">
+      <div class="row"><h2>Currículo recomendado</h2><span class="check">✓</span></div>
+      <div id="resumeName" class="big"></div>
+      <details><summary>Por que este currículo?</summary><p id="resumeWhy"></p></details>
+    </div>
+    <div class="card" id="salaryCard">
+      <h2>Pretensão salarial</h2>
+      <div id="salaryValue" class="money"></div>
+      <p id="salaryNote" class="muted"></p>
+      <span id="salaryBadge" class="badge"></span>
+    </div>
+    <p id="jobInfo" class="muted small"></p>
+  </section>
+</main>
+<script src="popup.js"></script>
+</body></html>

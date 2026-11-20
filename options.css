@@ -1,0 +1,16 @@
+.wrap{max-width:620px;margin:0 auto;padding:32px 20px 60px;display:flex;flex-direction:column;gap:16px}
+h1{display:flex;align-items:center;gap:10px;margin:0;font-size:26px}
+h2{margin:0 0 8px;font-size:16px}
+label{display:block;font-weight:600;margin-top:12px}
+input[type=password],input[type=number],select{display:block;width:100%;margin-top:6px;padding:10px 12px;border:1.5px solid var(--line);border-radius:10px;font:inherit;background:#fff;color:var(--confianca)}
+input:focus,select:focus{outline:2px solid var(--equilibrio);border-color:transparent}
+.small{font-size:12px;margin:6px 0 0}
+ul{list-style:none;padding:0;margin:8px 0 12px;display:flex;flex-direction:column;gap:8px}
+li{display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:10px;padding:8px 12px}
+li span{flex:1;word-break:break-word} li small{color:var(--base)}
+li button{border:0;background:none;color:var(--atencao);font-weight:700}
+.file{cursor:pointer;font-weight:700;margin-top:0}
+.actions{display:flex;align-items:center;gap:12px}
+.msg{margin:8px 0 0;font-weight:600;color:var(--equilibrio)} .msg.err{color:var(--atencao)}
+.actions .msg{margin:0}
+.danger-zone{border-color:#FCA5A5}

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Vaga Certa — Configurações</title>
+<link rel="stylesheet" href="shared.css"><link rel="stylesheet" href="options.css"></head>
+<body><div class="wrap">
+  <h1><img src="icons/icon48.png" alt="" width="36" height="36"> Vaga Certa</h1>
+  <p class="muted">Seu copiloto na busca por novas oportunidades. Tudo abaixo fica guardado só neste navegador.</p>
+
+  <section class="card">
+    <h2>Currículos (PDF)</h2>
+    <p class="muted">Até 5 currículos, 4 MB cada. Ao clicar em Analisar, eles são enviados direto para a API do Claude.</p>
+    <ul id="resumes"></ul>
+    <label class="btn sec file">+ Adicionar currículo<input id="file" type="file" accept="application/pdf" multiple hidden></label>
+    <p id="fileMsg" class="msg"></p>
+  </section>
+
+  <section class="card">
+    <h2>Chave de acesso e modelo</h2>
+    <label>Chave da API do Claude<input id="apiKey" type="password" placeholder="sk-ant-..." autocomplete="off"></label>
+    <p class="muted small">Guardada apenas neste navegador. A API é cobrada à parte da assinatura do Claude; cada análise tem um custo pequeno.</p>
+    <label>Modelo
+      <select id="model">
+        <option value="claude-sonnet-5-5">Claude Sonnet 5.5 (recomendado)</option>
+        <option value="claude-haiku-5-5">Claude Haiku 5.5 (mais barato)</option>
+        <option value="claude-opus-5-5">Claude Opus 5.5 (mais caprichado)</option>
+      </select>
+    </label>
+  </section>
+
+  <section class="card">
+    <h2>Salário (opcional)</h2>
+    <label>Salário atual (R$/mês) — serve de piso da sugestão<input id="salarioAtual" type="number" min="0" step="100"></label>
+    <label>Salário que busca (R$/mês)<input id="salarioDesejado" type="number" min="0" step="100"></label>
+  </section>
+
+  <div class="actions"><button id="save" class="btn">Salvar</button><span id="saveMsg" class="msg"></span></div>
+
+  <section class="card danger-zone">
+    <h2>Privacidade</h2>
+    <p class="muted">Apaga currículos, chave e configurações guardados neste navegador.</p>
+    <button id="wipe" class="btn danger">Apagar tudo</button>
+  </section>
+</div><script src="options.js"></script></body></html>
